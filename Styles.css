@@ -1,5 +1,11 @@
+body {
+    background-color: black;
+}
+
 .wheel {
-    border: 2px solid black;
+    border: 2px solid white;
+    box-shadow: 0 0 15px white,
+    0 0 30px white;
     border-radius: 50%;
     margin-left: 450px;
     position: absolute;
@@ -21,36 +27,42 @@
     left: 50%;
     top: 50%;
     transform-origin: 0% 0%;
-    border: solid 1px;
+    border: solid 1px white;
+    box-shadow: 0 0 10px white;
 }
 
 .line:nth-of-type(2) {
     transform: rotate(60deg);
-    border: solid 1px;
+    border: solid 1px white;
 }
 
 .line:nth-of-type(3) {
     transform: rotate(120deg);
-    border: solid 1px;
+    border: solid 1px white;
 }
 
 .line:nth-of-type(4) {
     transform: rotate(180deg);
-    border: solid 1px;
+    border: solid 1px white; 
 }
 
 .line:nth-of-type(5) {
     transform: rotate(240deg);
-    border: solid 1px;
+    border: solid 1px white;
 }
 
 .line:nth-of-type(6) {
     transform: rotate(300deg);
-    border: solid 1px;
+    border: solid 1px white;
 }
 
 .cabin {
     background-color: red;
+    box-shadow: 0 0 5px red,
+    0 0 15px red,
+    0 0 25px red,
+    0 0 500px red,
+    0 0 100px red;
     width: 20%;
     height: 20%;
     position: absolute;
@@ -99,6 +111,21 @@
     0% {
         transform: rotate(0deg);
     }
+    25% {
+        border: 2px solid white;
+        box-shadow: 0 0 15px yellow,
+        0 0 30px white;
+    }
+    50% {
+        border: 2px solid white;
+        box-shadow: 0 0 15px red,
+        0 0 30px white;
+    }
+    75% {
+        border: 2px solid white;
+        box-shadow: 0 0 15px yellow,
+        0 0 30px white;
+    }
     100% {
         transform: rotate(360deg);
     }
@@ -110,12 +137,27 @@
     }
     25%{
         background-color: yellow;
+        box-shadow: 0 0 5px yellow,
+    0 0 15px yellow,
+    0 0 25px yellow,
+    0 0 500px yellow,
+    0 0 100px yellow;
     }
     50%{
         background-color: red;
+        box-shadow: 0 0 5px red,
+    0 0 15px red,
+    0 0 25px red,
+    0 0 500px red,
+    0 0 100px red;
     }
     75%{
         background-color: yellow;
+        box-shadow: 0 0 5px yellow,
+        0 0 15px yellow,
+        0 0 25px yellow,
+        0 0 500px yellow,
+        0 0 100px yellow;
     }
     100% {
         transform: rotate(-360deg);
